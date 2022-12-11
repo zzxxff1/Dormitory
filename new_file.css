@@ -1,0 +1,99 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #000;
+}
+ul 
+{
+	position: relative;
+	display: flex;
+	justify-content: 0;
+	top:15%;
+	background: #000;
+	border-radius: 10px;
+	box-shadow: 0 5px 25px rgba(255,255,255,0.45);
+}
+ul li 
+{
+	list-style: none;
+}
+ul li a 
+{
+	position: relative;
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 65px 90px;
+	z-index: 1000;
+	backdrop-filter: blur(15px);
+}
+ul li a text 
+{
+	font-size: 2em;
+	pointer-events: none;
+	opacity: 0.25;
+	transition: 0.25s;
+}
+ul li.active a text
+{
+	opacity: 1;
+}
+#marker 
+{
+	position: absolute;
+	left:10%;
+	transition: 0.5s;
+	z-index: 1;
+}
+#marker::before 
+{
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 40px;
+	border-radius: 8px;
+}
+ul li:nth-child(1).active ~ #marker::before  
+{
+	background: #5da6ff;
+	box-shadow: 0 0 15px #5da6ff,
+	0 0 30px #5da6ff,
+	0 0 45px #5da6ff,
+	0 0 60px #5da6ff;
+}
+ul li:nth-child(2).active ~ #marker::before  
+{
+	background: #ff0;
+	box-shadow: 0 0 15px #ff0,
+	0 0 30px #ff0,
+	0 0 45px #ff0,
+	0 0 60px #ff0;
+}
+ul li:nth-child(3).active ~ #marker::before  
+{
+	background: #9AC999;
+	box-shadow: 0 0 15px #9AC999,
+	0 0 30px #9AC999,
+	0 0 45px #9AC999,
+	0 0 60px #9AC999;
+}
+ul li:nth-child(4).active ~ #marker::before  
+{
+	background: #D77474;
+	box-shadow: 0 0 15px #D77474,
+	0 0 30px #D77474,
+	0 0 45px #D77474,
+	0 0 60px #D77474;
+}
