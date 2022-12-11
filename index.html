@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glassmorphism | Magic Line Indicator 4</title>
+    <link rel="stylesheet" href="css/new_file.css">
+</head>
+<body>
+    <ul>
+        <li><a href="dian1.html" ><text>寝室用电管理</text></a></li>
+        <li><a href="xiu1.html"><text>报 修 大 厅</text></a></li>
+        <li class="active"><a href="shen1.html"><text>住宿状态变动</text></a></li>
+        <li><a href="#"><text>卫生情况查询</text></a></li>
+       
+        <div id="marker"></div>
+    </ul>
+   
+    <script>
+        let marker = document.querySelector('#marker');
+        let list = document.querySelectorAll('ul li');
+
+        function moveIndicator(e){
+            marker.style.left = e.offsetLeft+'px';
+            marker.style.width = e.offsetWidth+'px';
+        }
+
+        list.forEach(link => {
+            link.addEventListener('mousemove', (e) => {
+                moveIndicator(e.target);
+            })
+        })
+
+        // add active class in hovered list item
+       function activeLink(){
+        list.forEach((item) =>
+        item.classList.remove('active'));
+        this.classList.add('active');
+       }
+
+       list.forEach((item) =>
+       item.addEventListener('mouseover', activeLink));
+    </script>
+</body>
