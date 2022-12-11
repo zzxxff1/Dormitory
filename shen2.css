@@ -42,7 +42,7 @@
   align-items: flex-start;
   width: 1473px;
   height: 745px;
-  background-image: url(../images/img_10.png);
+  background-image:url(../images/img_10.png);
   background-size: contain;
   white-space: nowrap;
 }
@@ -191,6 +191,18 @@
   margin-right: 12px;
   white-space: normal;
 }
+.word {
+  position: relative;
+  align-self: center;
+  overflow: hidden;
+  height: 29px;
+  max-width: 90px;
+  margin-top: 81px;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  text-overflow: ellipsis;
+}
 .tagWrapper {
   position: relative;
   display: flex;
@@ -198,30 +210,18 @@
   align-items: center;
   width: 136px;
   height: 61px;
-  margin-top: 70px;
+  margin-top: 44px;
   background-color: #b5dff7;
   line-height: 20px;
   box-shadow: 6px 0px 6px 0px rgba(48, 46, 46, 0.30000001192092896);
-}
-.word {
-  position: relative;
-  align-self: center;
-  overflow: hidden;
-  height: 29px;
-  max-width: 90px;
-  margin-top: 9px;
-  font-size: 20px;
-  color: #000000;
-  text-align: center;
-  text-overflow: ellipsis;
 }
 .tag1 {
   position: relative;
   align-self: center;
   overflow: hidden;
-  height: 31px;
+  height: 20px;
   max-width: 90px;
-  margin-top: 24px;
+  margin-top: 0px;
   font-size: 20px;
   color: #000000;
   text-align: center;
@@ -233,7 +233,7 @@
   overflow: hidden;
   height: 31px;
   max-width: 90px;
-  margin-top: 44px;
+  margin-top: 60px;
   font-size: 20px;
   color: #000000;
   text-align: center;
@@ -245,7 +245,7 @@
   overflow: hidden;
   height: 31px;
   max-width: 90px;
-  margin-top: 44px;
+  margin-top: 60px;
   font-size: 20px;
   color: #000000;
   text-align: center;
@@ -257,15 +257,11 @@
   overflow: hidden;
   height: 31px;
   max-width: 90px;
-  margin-top: 44px;
+  margin-top: 60px;
   font-size: 20px;
   color: #000000;
   text-align: center;
   text-overflow: ellipsis;
-}
-a{
-  color: #000000;
-  text-decoration: none;
 }
 .class8 {
   position: relative;
@@ -273,7 +269,7 @@ a{
   overflow: hidden;
   height: 31px;
   max-width: 90px;
-  margin-top: 44px;
+  margin-top: 60px;
   font-size: 20px;
   color: #000000;
   text-align: center;
@@ -333,7 +329,7 @@ a{
   flex-direction: column;
   align-items: flex-start;
   margin-top: 23px;
-  margin-right: 280px;
+  margin-right: 245px;
 }
 .num {
   position: relative;
@@ -357,7 +353,7 @@ a{
   position: relative;
   overflow: hidden;
   height: 22px;
-  max-width: 100px;
+  max-width: 165px;
   margin-top: 59px;
   margin-left: 0px;
   font-size: 16px;
@@ -372,6 +368,10 @@ a{
   align-items: flex-start;
   margin-top: 24px;
   margin-right: 18px;
+}
+.shangchuan{
+  padding-top: 25px;
+  margin-left: -250px;
 }
 .tag3 {
   position: relative;
@@ -401,10 +401,6 @@ a{
   height: 100px;
   margin-top: 1px;
   margin-left: 1px;
-}
-.shangchuan{
-  padding-top: 25px;
-  margin-left: -250px;
 }
 .img {
   position: absolute;
@@ -450,31 +446,27 @@ a{
   white-space: nowrap;
 }
 .label3 {
-  margin-top: -20px;
-  margin-left: -60px;
+  margin-top: -30px;
 }
 .inp1{
   margin-left: 20px;
 }
+.class12 {
+  margin-top: 34px;
+}
 .word3 {
   margin-top: 34px;
 }
-.word33{
-  margin-left: 20px;
-}
-.inp2{
-  width: 100px;
-}
 .tag4 {
   margin-top: 34px;
-  margin-left: -90px;
+  margin-left: -50px;
 }
 .tag44{
   margin-left: 20px;
 }
 .word5 {
   margin-top: 34px;
-  margin-left: -150px;
+  margin-left: -115px;
 }
 .word55{
   margin-left: 20px;
@@ -488,6 +480,15 @@ a{
 }
 .layer {
   left: 0%;
+}
+.class13 {
+  top: 0px;
+  margin-top: 54px;
+}
+.class14 {
+  top: 0px;
+  margin-top: 54px;
+  input: date;
 }
 .view {
   display: flex;
@@ -559,8 +560,7 @@ a{
 .class1 {
   position: absolute;
   display: flex;
-  top: -60%;
-  left: 48%;
+  left: 550px;
   justify-content: space-between;
   margin-right: 300px;
   font-weight: 700;
@@ -568,22 +568,22 @@ a{
 }
 .class2 {
   position: absolute;
-  left: 50%;
-  top: 0;
+  left: 0px;
+  top: 0px;
   font-size: 20px;
   color: #000000;
 }
 .class3 {
   position: absolute;
-  top: -60%;
+  top: 0%;
   left: 55%;
   width: 320px;
   height: 180px;
 }
 .class4 {
   position: absolute;
-  left: 77%;
-  top: 90%;
+  left: 850px;
+  top: 220px;
   width: 250px;
   height: 50px;
   margin-bottom: 0;
@@ -606,6 +606,10 @@ a{
   align-self: center;
   width: 1100px;
   height: 54px;
-  margin-top: 54px;
+  margin-top: 0px;
   white-space: normal;
+}
+a{
+  color: #000000;
+  text-decoration: none;
 }
